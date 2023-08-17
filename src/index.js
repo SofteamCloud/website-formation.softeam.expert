@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 function App() {
     return (
-        <div>
+        <div className="container">
             <Header />
             <Courses />
             <Footer />
@@ -12,30 +13,38 @@ function App() {
 }
 
 function Header() {
-    return <h1>Softeam Self Service Learning</h1>
+    const style = {}
+
+    return (
+        <header className="header">
+            <h1 style={style}>Softeam Self Service Learning</h1>
+        </header>
+    );
 }
 
 function Courses() {
     return (
-        <div>
+        <main className="course">
             <h2>Our courses</h2>
             <Tutorial />
             <Tutorial />
             <Tutorial />
             <Tutorial />
-        </div>
+        </main>
     );
 }
 
 function Footer() {
-    return React.createElement('footer', null, "Happy Learning!!")
+    return (
+        <footer className="footer"><h1>Happy Learning!</h1></footer>
+    );
 }
 
 function Tutorial() {
     return (
         <div>
             <img src='tutorials/aws.jpg' alt="Amazon Web Services" />
-            <h2>Amazon Web Services</h2>
+            <h3>Amazon Web Services</h3>
             <p>Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.</p>
         </div>
     );
