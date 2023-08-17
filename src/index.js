@@ -26,27 +26,29 @@ function Courses() {
     return (
         <main className="course">
             <h2>Our courses</h2>
-            <Tutorial />
-            <Tutorial />
-            <Tutorial />
-            <Tutorial />
+            <Tutorial name='Amazon Web Services' overview='Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.'
+                photoName='tutorials/aws.jpg' />
+            <Tutorial name='Terraform Hashicorp' overview='Terraform is an infrastructure as code tool that enables you to safely and predictably provision and manage infrastructure in any cloud.'
+                photoName='tutorials/terraform.jpg' />
         </main>
+    );
+}
+
+function Tutorial(props) {
+    return (
+        <div className="tutorial">
+            <img src={props.photoName} alt={props.name} />
+            <div>
+                <h3>{props.name}</h3>
+                <p>{props.overview}.</p>
+            </div>
+        </div>
     );
 }
 
 function Footer() {
     return (
         <footer className="footer"><h1>Happy Learning!</h1></footer>
-    );
-}
-
-function Tutorial() {
-    return (
-        <div>
-            <img src='tutorials/aws.jpg' alt="Amazon Web Services" />
-            <h3>Amazon Web Services</h3>
-            <p>Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.</p>
-        </div>
     );
 }
 
