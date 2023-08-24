@@ -59,13 +59,13 @@ function Courses() {
     );
 }
 
-function Tutorial(props) {
+function Tutorial({ tutorialObj }) {
     return (
         <li className="tutorial">
-            <img src={props.tutorialObj.photoName} alt={props.tutorialObj.name} />
+            <img src={tutorialObj.photoName} alt={tutorialObj.name} />
             <div>
-                <h3>{props.tutorialObj.name}</h3>
-                <p>{props.tutorialObj.overview}.</p>
+                <h3>{tutorialObj.name}</h3>
+                <p>{tutorialObj.overview}.</p>
             </div>
         </li>
     );
