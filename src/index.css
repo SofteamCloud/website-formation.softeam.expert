@@ -58,7 +58,7 @@ body {
   content: '';
   height: 3px;
   width: 12rem;
-  background-color: #edc84b;
+  background-color: #0472df;
   position: absolute;
   top: calc(50% - 1px);
 }
