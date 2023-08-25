@@ -33,46 +33,6 @@ body {
 
 /* *************** */
 
-.header {
-  align-self: stretch;
-}
-
-.header h1 {
-  /* Non-accessible color */
-  color: #0472df;
-  /* color: #af8602; */
-
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 5.2rem;
-  font-weight: 300;
-  letter-spacing: 3px;
-  position: relative;
-  width: 100%;
-  display: block;
-}
-
-.header h1::before,
-.header h1::after {
-  display: block;
-  content: '';
-  height: 3px;
-  width: 12rem;
-  background-color: #0472df;
-  position: absolute;
-  top: calc(50% - 1px);
-}
-
-.header h1::before {
-  left: 0;
-}
-
-.header h1::after {
-  right: 0;
-}
-
-/* *************** */
-
 .course {
   display: flex;
   flex-direction: column;
@@ -150,10 +110,6 @@ body {
 }
 
 /* *************** */
-
-.footer {
-  font-size: 1.4rem;
-}
 
 .order {
   display: flex;

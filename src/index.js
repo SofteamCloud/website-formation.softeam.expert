@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const tutorialData = [
     {
@@ -35,20 +37,12 @@ function App() {
     );
 }
 
-function Header() {
-    const style = {}
-
-    return (
-        <header className="header">
-            <h1 style={style}>Softeam Self Service Learning</h1>
-        </header>
-    );
-}
-
 function Courses() {
     return (
         <main className="course">
             <h2>Our courses</h2>
+
+            <p>At Softeam, we believe in the relentless pursuit of knowledge. Recognizing the rapidly evolving tech landscape, we introduced the Softeam Self Learning Service - a dedicated platform for our team members. This service offers a comprehensive range of courses and tutorials tailored for those eager to stay at the forefront of technology.</p>
 
             <ul className="tutorials">
                 {tutorialData.map((tutorial) => (
@@ -68,12 +62,6 @@ function Tutorial({ tutorialObj }) {
                 <p>{tutorialObj.overview}.</p>
             </div>
         </li>
-    );
-}
-
-function Footer() {
-    return (
-        <footer className="footer"><h1>Happy Learning!</h1></footer>
     );
 }
 
