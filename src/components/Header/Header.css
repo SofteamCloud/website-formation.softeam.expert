@@ -4,7 +4,7 @@
 
 .header h1 {
     /* Non-accessible color */
-    color: #0472df;
+    color: #0000FF;
     /* color: #af8602; */
 
     text-transform: uppercase;
@@ -23,7 +23,7 @@
     content: '';
     height: 3px;
     width: 12rem;
-    background-color: #0472df;
+    background-color: #0000FF;
     position: absolute;
     top: calc(50% - 1px);
 }
