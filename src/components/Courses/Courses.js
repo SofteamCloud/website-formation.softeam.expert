@@ -1,7 +1,7 @@
 import React from 'react';
 import Tutorial from './Tutorial';
 import tutorialData from '../../data/tutorialData';
-import '../../App.css';
+import './Courses.css';
 
 function Courses() {
     return (
@@ -14,6 +14,9 @@ function Courses() {
                     <Tutorial tutorialObj={tutorial} key={tutorial.name} />
                 ))}
             </ul>
+            <div>
+                <button className="btn">Happy Learning!</button>
+            </div>
         </main>
     );
 }
