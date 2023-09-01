@@ -1,19 +1,13 @@
 .footer {
     font-size: 1.4rem;
+    text-align: center;
+    position: relative;
 }
 
-.btn {
-    color: inherit;
-    font-family: inherit;
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 500;
-    background-color: #edc84b;
-    padding: 1.4rem 3.2rem;
-    cursor: pointer;
-    transition: all 0.2s;
-}
+/**set the size of the logo */
 
-.btn:hover {
-    background-color: #e9bb24;
+.logo-softeam {
+    width: 250px;
+    height: 100px;
+    position: absolute;
 }

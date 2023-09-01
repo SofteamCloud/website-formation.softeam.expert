@@ -4,8 +4,8 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className="footer">
-            <div>
-                <button className="btn">Happy Learning!</button>
+            <div className="container">
+                <img className="logo-softeam" src="./logos/softeam_logo.png" alt="logo" />
             </div>
         </footer>
     );
