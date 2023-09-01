@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import './Tutorial.css';
 
 function Tutorial({ tutorialObj }) {
     return (
