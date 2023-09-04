@@ -7,7 +7,7 @@ function Topic() {
 
     useEffect(() => {
         if (courseName === 'aws' && level === 'fundamental') {
-            setFiles(['What is an EC2.md', 'Working with S3.md']);
+            setFiles(['What-is-an-EC2.md', 'Working with S3.md']);
         }
 
         // Add similar conditions for other courses and levels...
