@@ -34,9 +34,16 @@ function MarkdownDisplay() {
     return (
         <div className="markdown-body">
             <ReactMarkdown
-                plugins={[gfm]}
+                remarkPlugins={[gfm]}
                 children={markdown}
-                renderers={renderers}
+                components={{
+                    code: ({ node, inline, className, children, ...props }) => {
+                        const match = /language-(\w+)/.exec(className || '');
+                        return match
+                            ? <SyntaxHighlighter language={match[1]} children={String(children).replace(/\n$/, '')} {...props} />
+                            : <code className={className} {...props} >{String(children).replace(/\n$/, '')}</code>;
+                    }
+                }}
             />
         </div>
     );
