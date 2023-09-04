@@ -2,6 +2,7 @@ import React from 'react';
 import Tutorial from './Tutorial';
 import tutorialData from '../../data/tutorialData';
 import './Courses.css';
+import { Link } from 'react-router-dom';
 
 function Courses() {
     return (
@@ -15,7 +16,9 @@ function Courses() {
                 ))}
             </ul>
             <div>
-                <button className="btn">Happy Learning!</button>
+                <Link to="/category">
+                    <button className="btn">Happy Learning!</button>
+                </Link>
             </div>
         </main>
     );
