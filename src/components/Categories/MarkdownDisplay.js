@@ -11,6 +11,10 @@ function MarkdownDisplay() {
 
     useEffect(() => {
         const filePath = `/courses/${courseName}/${level}/${mdFileName}.md`;
+
+        // Log the constructed file path
+        console.log('Fetching from:', filePath);
+
         fetch(filePath)
             .then(response => {
                 if (!response.ok) {
@@ -24,12 +28,6 @@ function MarkdownDisplay() {
                 setMarkdown('Failed to load content.');
             });
     }, [courseName, level, mdFileName]);
-
-    const renderers = {
-        code: ({ language, value }) => {
-            return <SyntaxHighlighter language={language} children={value} />;
-        },
-    };
 
     return (
         <div className="markdown-body">
