@@ -3,35 +3,11 @@
 }
 
 .header h1 {
-    /* Non-accessible color */
     color: #0000FF;
-    /* color: #af8602; */
-
     text-transform: uppercase;
     text-align: center;
-    font-size: 5.2rem;
-    font-weight: 300;
+    font-size: 50px;
+    font-weight: 100;
     letter-spacing: 3px;
-    position: relative;
     width: 100%;
-    display: block;
-}
-
-.header h1::before,
-.header h1::after {
-    display: block;
-    content: '';
-    height: 3px;
-    width: 12rem;
-    background-color: #0000FF;
-    position: absolute;
-    top: calc(50% - 1px);
-}
-
-.header h1::before {
-    left: 0;
-}
-
-.header h1::after {
-    right: 0;
 }
