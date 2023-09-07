@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import './Topic.css';
 
 function Topic() {
     const { courseName, level } = useParams();
@@ -17,7 +18,7 @@ function Topic() {
     }, [courseName, level]);
 
     return (
-        <div>
+        <div className='topic'>
             <h1>{level.toUpperCase()}</h1>
             <ul>
                 {files.map(file => (
