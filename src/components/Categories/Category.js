@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Category.css';  // Import the CSS file
+import './Category.css';
 
 function Category() {
     const courses = ['aws', 'terraform', 'kubernetes', 'gitlab'];
 
     return (
-        <div>
+        <div className='category'>
             <h1>Courses List</h1>
             <ul>
                 {courses.map(course => (
