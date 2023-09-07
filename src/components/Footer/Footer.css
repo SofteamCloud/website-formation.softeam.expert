@@ -1,13 +1,17 @@
 .footer {
-    font-size: 1.4rem;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    padding: 20px;
     text-align: center;
-    position: relative;
+    margin-top: 20px;
 }
 
-/**set the size of the logo */
+p {
+    margin: 0;
+}
 
 .logo-softeam {
     width: 250px;
     height: 100px;
-    position: absolute;
 }
