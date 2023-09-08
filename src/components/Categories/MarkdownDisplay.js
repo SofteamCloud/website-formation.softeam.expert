@@ -42,6 +42,9 @@ function MarkdownDisplay() {
                             : <code className={className} {...props} >{String(children).replace(/\n$/, '')}</code>;
                     }
                 }}
+                transformImageUri={uri => {
+                    return `${process.env.PUBLIC_URL}/courses/${courseName}/${level}/${uri}`;
+                }}
             />
         </div>
     );
