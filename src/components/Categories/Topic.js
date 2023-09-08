@@ -11,6 +11,10 @@ function Topic() {
             setFiles(['What-is-an-EC2.md', 'Working with S3.md']);
         }
 
+        if (courseName === 'aws' && level === 'professional') {
+            setFiles(['EC2-Hands-On.md']);
+        }
+
         // Add similar conditions for other courses and levels...
         if (courseName === 'terraform' && level === 'essential') {
             setFiles(['terraform-setup.md']);
