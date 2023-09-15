@@ -7,18 +7,23 @@ function Topic() {
     const [files, setFiles] = useState([]);
 
     useEffect(() => {
-        if (courseName === 'aws' && level === 'fundamental') {
-            setFiles(['What-is-an-EC2.md', 'Working with S3.md']);
-        }
+        const metadataPath = `/courses/${courseName}/${level}/metadata.json`;
 
-        if (courseName === 'aws' && level === 'professional') {
-            setFiles(['EC2-Hands-On.md']);
-        }
-
-        // Add similar conditions for other courses and levels...
-        if (courseName === 'terraform' && level === 'essential') {
-            setFiles(['terraform-setup.md']);
-        }
+        fetch(metadataPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch metadata file: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.topics && Array.isArray(data.topics)) {
+                    setFiles(data.topics);
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
     }, [courseName, level]);
 
     return (
@@ -38,5 +43,3 @@ function Topic() {
 }
 
 export default Topic;
-
-
