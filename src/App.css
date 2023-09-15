@@ -6,9 +6,21 @@ html {
 
 body {
     font-family: 'Roboto Mono', sans-serif;
-    color: #252525;
+    color: #c9d1d9;
+    /* Light gray color for text */
     font-weight: 400;
-    background-color: #f7f2e9;
+    background-color: #0d1117;
+    /* GitHub dark mode background color */
+}
+
+a {
+    color: #58a6ff;
+    /* GitHub dark mode link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -17,4 +29,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Additional styles for buttons, headers, etc. */
+button {
+    background-color: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #30363d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #c9d1d9;
 }
