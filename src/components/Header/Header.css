@@ -3,7 +3,8 @@
 }
 
 .header h1 {
-    color: #0000FF;
+    color: #c9d1d9;
+    /* This is the light gray color we're using for text in dark mode */
     text-transform: uppercase;
     text-align: center;
     font-size: 50px;
