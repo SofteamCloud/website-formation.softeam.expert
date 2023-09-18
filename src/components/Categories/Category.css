@@ -19,10 +19,12 @@ li {
 
 li a {
     text-decoration: none;
-    color: #333;
+    color: #c9d1d9;
+    /* Updated color to light gray for better visibility in dark mode */
     transition: color 0.3s;
 }
 
 li a:hover {
-    color: #007BFF;
+    color: #58a6ff;
+    /* Using the GitHub dark mode link color for hover state */
 }
