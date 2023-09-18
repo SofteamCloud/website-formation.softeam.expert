@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { useParams } from 'react-router-dom';
 import 'github-markdown-css/github-markdown.css'; // GitHub markdown styling
+import './MarkdownDisplay.css';
 
 function MarkdownDisplay() {
     const { courseName, level, mdFileName } = useParams();
@@ -38,7 +40,7 @@ function MarkdownDisplay() {
                     code: ({ node, inline, className, children, ...props }) => {
                         const match = /language-(\w+)/.exec(className || '');
                         return match
-                            ? <SyntaxHighlighter language={match[1]} children={String(children).replace(/\n$/, '')} {...props} />
+                            ? <SyntaxHighlighter style={dracula} language={match[1]} children={String(children).replace(/\n$/, '')} {...props} />
                             : <code className={className} {...props} >{String(children).replace(/\n$/, '')}</code>;
                     }
                 }}
