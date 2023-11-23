@@ -4,21 +4,26 @@ import './Topic.css';
 
 function Topic() {
     const { courseName, level } = useParams();
-    const [files, setFiles] = useState([]);
+    const [topics, setTopics] = useState([]);
 
     useEffect(() => {
-        const metadataPath = `/courses/${courseName}/${level}/metadata.json`;
-
-        fetch(metadataPath)
+        // Fetch coursesMetadata.json to get the list of topics for the selected course and level
+        fetch('/courses/coursesMetadata.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`Failed to fetch metadata file: ${response.statusText}`);
+                    throw new Error(`Failed to fetch coursesMetadata.json: ${response.statusText}`);
                 }
                 return response.json();
             })
             .then(data => {
-                if (data.topics && Array.isArray(data.topics)) {
-                    setFiles(data.topics);
+                // Find the selected course
+                const selectedCourse = data.courses.find(course => course.name === courseName);
+                if (selectedCourse) {
+                    // Find the selected level within that course
+                    const selectedLevel = selectedCourse.levels.find(lvl => lvl.name === level);
+                    if (selectedLevel && Array.isArray(selectedLevel.topics)) {
+                        setTopics(selectedLevel.topics);
+                    }
                 }
             })
             .catch(error => {
@@ -30,10 +35,10 @@ function Topic() {
         <div className='topic'>
             <h1>{level.toUpperCase()}</h1>
             <ul>
-                {files.map(file => (
-                    <li key={file}>
-                        <Link to={`/${courseName}/${level}/${file.replace('.md', '')}`}>
-                            {file.replace('.md', '')}
+                {topics.map(topic => (
+                    <li key={topic}>
+                        <Link to={`/${courseName}/${level}/${topic.replace('.md', '')}`}>
+                            {topic.replace('.md', '')}
                         </Link>
                     </li>
                 ))}

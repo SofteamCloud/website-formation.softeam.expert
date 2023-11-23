@@ -1,0 +1,64 @@
+{
+  "courses": [
+    {
+      "name": "aws",
+      "levels": [
+        {
+          "name": "essential",
+          "topics": [
+            "ECS Introduction.md",
+            "Lambda Introduction.md"
+          ]
+        },
+        {
+          "name": "fundamental",
+          "topics": [
+            "Example.md",
+            "What-is-an-EC2.md",
+            "Working with S3.md"
+          ]
+        },
+        {
+          "name": "professional",
+          "topics": [
+            "EC2-Hands-On.md"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "docker",
+      "levels": [
+        {
+          "name": "fundamental",
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "github",
+      "levels": [
+        {
+          "name": "essential",
+          "topics": []
+        },
+        {
+          "name": "fundamental",
+          "topics": []
+        }
+      ]
+    },
+    {
+      "name": "gitlab",
+      "levels": []
+    },
+    {
+      "name": "kubernetes",
+      "levels": []
+    },
+    {
+      "name": "terraform",
+      "levels": []
+    }
+  ]
+}
