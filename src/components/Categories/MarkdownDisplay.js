@@ -14,7 +14,6 @@ function MarkdownDisplay() {
     useEffect(() => {
         const filePath = `/courses/${courseName}/${level}/${mdFileName}.md`;
 
-        // Log the constructed file path
         console.log('Fetching from:', filePath);
 
         fetch(filePath)
@@ -31,18 +30,33 @@ function MarkdownDisplay() {
             });
     }, [courseName, level, mdFileName]);
 
+    // Custom renderer for headings to ensure they have correct ids
+    const renderHeading = (children, level) => {
+        const text = children[0];
+        const slug = text.toLowerCase().replace(/\W/g, '-'); // Replace non-alphanumeric chars with hyphens
+        return React.createElement(`h${level}`, { id: slug }, children);
+    };
+
     return (
         <div className="markdown-body">
             <ReactMarkdown
                 remarkPlugins={[gfm]}
                 children={markdown}
                 components={{
+                    // Syntax highlighting for code blocks
                     code: ({ node, inline, className, children, ...props }) => {
                         const match = /language-(\w+)/.exec(className || '');
                         return match
                             ? <SyntaxHighlighter style={dracula} language={match[1]} children={String(children).replace(/\n$/, '')} {...props} />
-                            : <code className={className} {...props} >{String(children).replace(/\n$/, '')}</code>;
-                    }
+                            : <code className={className} {...props}>{String(children).replace(/\n$/, '')}</code>;
+                    },
+                    // Handling headings to add ids
+                    h1: ({ children }) => renderHeading(children, 1),
+                    h2: ({ children }) => renderHeading(children, 2),
+                    h3: ({ children }) => renderHeading(children, 3),
+                    h4: ({ children }) => renderHeading(children, 4),
+                    h5: ({ children }) => renderHeading(children, 5),
+                    h6: ({ children }) => renderHeading(children, 6),
                 }}
                 transformImageUri={uri => {
                     return `${process.env.PUBLIC_URL}/courses/${courseName}/${level}/${uri}`;
