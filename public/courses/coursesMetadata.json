@@ -57,6 +57,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "terraform",
+      "levels": [
+        {
+          "name": "fundamental",
+          "topics": [
+            "01-Terraform-Introduction.md"
+          ]
+        }
+      ]
     }
   ]
 }
