@@ -35,6 +35,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "gitlab",
+      "levels": [
+        {
+          "name": "fundamental",
+          "topics": [
+            "01-Pipeline-Introduction.md"
+          ]
+        }
+      ]
     }
   ]
 }
