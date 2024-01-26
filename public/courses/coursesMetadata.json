@@ -46,6 +46,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "kubernetes",
+      "levels": [
+        {
+          "name": "fundamental",
+          "topics": [
+            "01-Kubernetes-Overview.md"
+          ]
+        }
+      ]
     }
   ]
 }
