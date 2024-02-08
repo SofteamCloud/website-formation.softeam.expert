@@ -23,6 +23,12 @@ const tutorialData = [
         photoName: "images/gitlab.png",
         path: "/gitlab"
     },
+    {
+        name: "Docker",
+        overview: "Docker is a tool that uses containers to make it easier to create, deploy, and run applications by packaging software into standardized units. These containers are lightweight, portable, and ensure that applications work seamlessly in any environment.",
+        photoName: "images/docker.png",
+        path: "/docker"
+    },
 ];
 
 export default tutorialData;
