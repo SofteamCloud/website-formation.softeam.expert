@@ -21,8 +21,7 @@
           "name": "professional",
           "topics": [
             "01-EC2-Hands-On.md",
-            "02-Schedule-Lambda-Functions-Using-EventBridge.md",
-            "03-GCP-Introduction.md"
+            "02-Schedule-Lambda-Functions-Using-EventBridge.md"
           ]
         }
       ]
