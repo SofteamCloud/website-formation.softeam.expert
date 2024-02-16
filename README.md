@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Softeam Self Service Learning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [About this Project](#about-this-project)
+- [Project Goals](#project-goals)
+- [Usage and Examples](#usage-and-examples)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
+- [Troubleshooting](#troubleshooting)
+- [Code of Conduct](#code-of-conduct)
+- [Contact](#contact)
+- [Conclusion](#conclusion)
+- [References](#references)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+Welcome to the Softeam Self Service Learning project! This initiative is designed to empower our team members by providing them with a comprehensive platform for continuous learning and development. The project encompasses a wide range of courses, from foundational knowledge in technologies like AWS and Docker to advanced topics in Kubernetes and Terraform. Our goal is to enable our employees to stay ahead in the fast-evolving tech landscape, fostering a culture of knowledge sharing and professional growth.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About this Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project focuses on converting markdown files to HTML, simplifying the process of sharing knowledge and content. By utilizing this platform, contributors can easily create and disseminate educational material, making it accessible and engaging for learners. This feature is especially useful for structuring courses and tutorials, allowing for a seamless learning experience that integrates effortlessly with the web.
 
-### `npm test`
+## Project Goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The objective of this document is to guide users through the features and functionalities of the Self Service Learning platform. It serves as a comprehensive manual for navigating the courses, utilizing the resources, and contributing to the project. Whether you are a beginner looking to learn new skills or an experienced professional aiming to brush up on the latest technologies, this document will help you make the most of the learning opportunities available.
 
-### `npm run build`
+## Usage and Examples
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Accessing Courses
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start exploring the courses available, you can browse the categories and select a course that interests you. Each course is structured into different levels: essential, fundamental, and professional, allowing learners to start from a level that matches their proficiency.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Example: Viewing AWS Courses
 
-### `npm run eject`
+The AWS course, along with others, is located in the `public/courses/` directory of the project. Here's how the structure looks:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```plaintext
+project-root/
+│
+├── public/                                  # Public assets and static files
+│   ├── courses/                             # Course content directories
+│   │   ├── aws/                             # AWS course directory
+│   │   ├── docker/                          # Docker course directory
+│   │   ├── github/                          # GitHub course directory
+│   │   ├── gitlab/                          # GitLab course directory
+│   │   ├── kubernetes/                      # Kubernetes course directory
+│   │   └── terraform/                       # Terraform course directory
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To access the AWS course content:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Navigate to the `public/courses/aws/` directory.
+2. Here, you'll find different subdirectories and markdown files corresponding to various topics and levels of the AWS course.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Viewing Tutorials
 
-## Learn More
+Each course contains a series of tutorials or markdown files that guide you through various topics within the course.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Example: Accessing a Tutorial
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The AWS tutorials are structured within the `public/courses/aws/` directory, organized by levels of complexity: essential, fundamental, and professional. Below is an outline of how tutorials are organized within the AWS course directory:
 
-### Code Splitting
+```plaintext
+project-root/
+│
+├── public/                                  
+│   ├── courses/                             
+│   │   ├── aws/                             
+│   │   │   ├── essential/                    # Essential level tutorials
+│   │   │   │   ├── 01-EC2-Introduction.md    # Introduction to EC2
+│   │   │   │   ├── 02-Lambda-Introduction.md # Introduction to Lambda
+│   │   │   │   └── 03-ECS-Introduction.md    # Introduction to ECS
+│   │   │   ├── fundamental/                  # Fundamental level tutorials
+│   │   │   │   ├── 01-What-is-an-EC2.md      # Detailed exploration of EC2
+│   │   │   │   ├── 02-Working-with-S3.md     # Guide to using S3
+│   │   │   │   └── 03-ECS-Introduction.md    # Further exploration of ECS
+│   │   │   ├── professional/                 # Professional level tutorials
+│   │   │   │   └── 01-EC2-Hands-On.md        # Hands-on with EC2
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To access a specific tutorial, follow these steps:
 
-### Analyzing the Bundle Size
+1. Identify the course and level you are interested in. For instance, if you want to learn about Amazon EC2 at a fundamental level, navigate to the `public/courses/aws/fundamental/` directory.
+2. Select the tutorial you wish to view. For example, to learn the basics of Amazon EC2, open the `01-What-is-an-EC2.md` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Contribute
 
-### Making a Progressive Web App
+For details on contributing to the project, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file. Your contributions can range from creating new courses, updating existing content, or fixing bugs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the [LICENSE](LICENSE) file included in the repository. We encourage you to read the license agreement to understand your rights and responsibilities when using or contributing to the Softeam Self Service Learning platform.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Troubleshooting
 
-### Deployment
+Encountered an issue? Check out our [Troubleshooting.md](Troubleshooting.md) guide for common problems and their solutions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Code of Conduct
 
-### `npm run build` fails to minify
+We are committed to providing a welcoming and inclusive experience for everyone. Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the expectations for participating in our community.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+
+For further questions or suggestions, feel free to contact me at minh-hung.phan@softeam.fr.
+
+## Conclusion
+
+The Softeam Self Service Learning platform is an ever-evolving project aimed at fostering a culture of continuous learning and development. By engaging with the content, contributing to the repository, and sharing knowledge, we can collectively enhance our technical competencies and stay ahead in the technological curve. We encourage every team member to explore the courses, contribute to the project, and embark on their learning journey.
+
+## References
+
+- [Markdown Guide](https://www.markdownguide.org/)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
