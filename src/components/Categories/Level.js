@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './Level.css';
+import capitalizeFirstLetter from '../../utils/capitalizeFirstLetter';
 
 function Level() {
     const { courseName } = useParams();
@@ -31,7 +32,7 @@ function Level() {
             <ul>
                 {levels.map(level => (
                     <li key={level}>
-                        <Link to={`/${courseName}/${level}`}>{level}</Link>
+                        <Link to={`/${courseName}/${level}`}>{capitalizeFirstLetter(level)}</Link>
                     </li>
                 ))}
             </ul>
@@ -40,4 +41,3 @@ function Level() {
 }
 
 export default Level;
-
