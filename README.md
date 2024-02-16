@@ -2,17 +2,23 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [About this Project](#about-this-project)
-- [Project Goals](#project-goals)
-- [Usage and Examples](#usage-and-examples)
-- [How to Contribute](#how-to-contribute)
-- [License](#license)
-- [Troubleshooting](#troubleshooting)
-- [Code of Conduct](#code-of-conduct)
-- [Contact](#contact)
-- [Conclusion](#conclusion)
-- [References](#references)
+- [Softeam Self Service Learning](#softeam-self-service-learning)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [About this Project](#about-this-project)
+  - [Project Goals](#project-goals)
+  - [Usage and Examples](#usage-and-examples)
+    - [Accessing Courses](#accessing-courses)
+      - [Example: Viewing AWS Courses](#example-viewing-aws-courses)
+    - [Viewing Tutorials](#viewing-tutorials)
+      - [Example: Accessing a Tutorial](#example-accessing-a-tutorial)
+  - [How to Contribute](#how-to-contribute)
+  - [License](#license)
+  - [Troubleshooting](#troubleshooting)
+  - [Code of Conduct](#code-of-conduct)
+  - [Contact](#contact)
+  - [Conclusion](#conclusion)
+  - [References](#references)
 
 ## Introduction
 
@@ -86,6 +92,7 @@ To access a specific tutorial, follow these steps:
 2. Select the tutorial you wish to view. For example, to learn the basics of Amazon EC2, open the `01-What-is-an-EC2.md` file.
 
 ## How to Contribute
+We encourage the community to contribute by adding new questions, suggesting updates, or improvements.
 
 For details on contributing to the project, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file. Your contributions can range from creating new courses, updating existing content, or fixing bugs.
 
