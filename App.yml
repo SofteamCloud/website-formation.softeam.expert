@@ -25,6 +25,9 @@ tutorialData:
   - name: Angular
     overview: GitLab is a widely used platform that enables teams to collaborate on software development projects. It provides a seamless interface for managing repositories, pipelines, and everything related to your project.
     photoName: tutorials/angular2.png
+  - name: Node.Js
+    overview: Node.js is a server-side JavaScript runtime that allows for the execution of JavaScript code on the server, enabling the development of scalable and high-performance network applications.
+    photoName: tutorials/nodeJs.jpg
 
 Courses:
   components:
@@ -33,7 +36,7 @@ Courses:
     - ul:
         class: tutorials
         components:
-          - Tutorial: 
+          - Tutorial:
               for_each: tutorial in tutorialData
               key: tutorial.name
 

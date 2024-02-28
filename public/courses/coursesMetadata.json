@@ -83,6 +83,19 @@
           ]
         }
       ]
-    }    
+    },
+    {
+      "name": "nodeJs",
+      "levels": [
+        {
+          "name": "essential",
+          "topics": [
+            "01-NodeJs-Overview.md",
+            "02-NodeJs-Installation-guide.md",
+            "03-NodeJs-Architecture-Model.md"
+          ]
+        }
+      ]
+    }
   ]
 }
