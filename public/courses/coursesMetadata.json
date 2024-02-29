@@ -69,6 +69,18 @@
           ]
         }
       ]
-    }
+    },
+    {
+      "name": "angular",
+      "levels": [
+        {
+          "name": "essential",
+          "topics": [
+            "01-angular-introduction.md",
+            "02-angular-architecture.md"
+          ]
+        }
+      ]
+    }    
   ]
 }
