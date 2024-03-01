@@ -54,7 +54,7 @@ To create a Lambda function manually, follow these steps:
 2. In the search bar, type "Lambda" and select Lambda from the options.
 3. Click on the "Create function" button to begin creating your Lambda function.
 
-![Lambda creation](images/lambda_creation.png)
+![Lambda creation](images/lambda_creation_.png)
 
 
 ### Basic Lambda
@@ -63,19 +63,19 @@ There are many ways a lambda can be triggered.
 Let's illustrate it
 Lambda functions can be triggered by file uploads to S3, HTTP requests via API Gateway, database changes in DynamoDB, scheduled events with CloudWatch, message publishes through SNS, and message queues in SQS etc.
 
-![Lambda triggers](images/lambda_triggers.png)
+![Lambda triggers](images/lambda_triggers_.png)
 
 ### Authorizer Lambda
 
 The Authorizer Lambda assists in authentication and authorization, ensuring that only authorized requests are allowed to proceed.
 
-![Lambda basic lambda](images/lambda_authorizer.png)
+![Lambda basic lambda](images/lambda_authorizer_.png)
 
 ### Container Lambda
 
 Container Lambda integrates with Amazon Elastic Container Registry (ECR), allowing you to store, manage, and deploy your Docker container images seamlessly within the AWS ecosystem for enhanced flexibility and scalability
 
-![Lambda basic lambda](images/lambda_container.png)
+![Lambda basic lambda](images/lambda_container_.png)
 
 ## Lambda frameworks in local
 
@@ -89,10 +89,10 @@ You are going to be guided for creating a lambda.
 sam init
 ``` 
 
-![Lambda basic lambda](images/lambda_sam_step_1.png)
+![Lambda basic lambda](images/lambda_sam_step_1_.png)
 
 
-![Lambda basic lambda](images/lambda_sam_step_2.png)
+![Lambda basic lambda](images/lambda_sam_step_2_.png)
 
 Use the sam local invoke command to invoke your Lambda function locally and test it:
 
@@ -118,7 +118,7 @@ The main file here is SAM Template, this how it is structured
 
 **_After local test you can deploy it, here an illustration_**.
 
-![Lambda basic lambda](images/lambda_sam_structures_file.png)
+![Lambda basic lambda](images/lambda_sam_structures_file_.png)
 
 
 ### Serverless framework
@@ -156,12 +156,12 @@ Finally, start the local environment by running:
 This will launch a local environment emulating AWS Lambda and API Gateway, allowing you to test your serverless functions locally.
 
 _Basically this is what we try to simulate:_
-![Lambda basic lambda](images/lambda_framework_simulation.png)
+![Lambda basic lambda](images/lambda_framework_simulation_.png)
 
 
 _A sneak peek on the two main files for running in local_:
 
-![Lambda basic lambda](images/lambda_serverless_framework_files.png)
+![Lambda basic lambda](images/lambda_serverless_framework_files_.png)
 
 ## Comparisons
 
@@ -179,7 +179,7 @@ Broadly speaking:
 
 This offers a clearer comparison between AWS SAM and the Serverless Framework, along with a suggestion for further exploration into deployment tools like Terraform or CloudFormation.
 
-![Lambda basic lambda](images/lambda_framework_comparisons.png)
+![Lambda basic lambda](images/lambda_framework_comparisons_.png)
 
 When initiating a new serverless project, it's essential to consider which tool will streamline development.
 
