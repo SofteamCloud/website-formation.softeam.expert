@@ -4,6 +4,19 @@
 
 AWS Step Functions is a serverless orchestration service that makes it easy to sequence AWS services and functions into scalable workflows. With Step Functions, you can design and execute serverless workflows that integrate services such as AWS Lambda, Amazon SNS, and Amazon DynamoDB and many more. Step Functions automatically manages the execution, error handling, and state of each step in your application workflow, allowing you **to focus on your business logic**.
 
+## Table of Contents
+
+- [Key Features](#key-features)
+- [Use Cases](#use-cases)
+- [How It Works](#how-it-works)
+- [State Machines and Amazon States Language (ASL)](#state-machines-and-amazon-states-language-asl)
+- [Centralized State Management](#centralized-state-management)
+- [Pricing](#pricing)
+- [Further Reading](#further-reading)
+
+
+
+
 ## Key Features
 
 1. **Visual Workflow Management**: Use the visual editor, Workflow studio in the AWS Management Console to diagram and configure your state machines.
@@ -69,17 +82,17 @@ Visual view of the state machine:
 ![Hello World step function](images/helloword-step-function-in-workflow-studio.png)
 
 
-### Centralized State Management
+## Centralized State Management
 
 AWS Step Functions manages the state of your workflows centrally, which brings several advantages and potential drawbacks, particularly in microservices architectures. AWS Step Functions, with its centralized workflow orchestration, stands **in contrast to event-driven architectures** that prioritize decentralized communication and processing through events. 
 
-#### Advantages:
+### Advantages:
 
 - **Simplified State Management**: Centralizing state management reduces the complexity of tracking the state across multiple services.
 - **Improved Visibility**: Provides a unified view of your workflow executions, making it easier to monitor and debug.
 - **Consistency**: Ensures that the workflow execution state is consistent and reliably managed, even in the case of failures or retries.
 
-#### Potential Drawbacks:
+### Potential Drawbacks:
 
 - **Tight Coupling**: In a microservices architecture, having a centralized state can lead to tighter coupling between services, which might contradict the microservices principle of decentralized governance.
 - **Single Point of Failure**: Centralized management can become a single point of failure if not properly designed for high availability and fault tolerance.
