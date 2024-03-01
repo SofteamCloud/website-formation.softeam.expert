@@ -13,6 +13,7 @@
         {
           "name": "fundamental",
           "topics": [
+            "Step-functions.md",
             "What-is-an-EC2.md",
             "Working with S3.md"
           ]
