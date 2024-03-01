@@ -6,6 +6,14 @@ Angular includes:
 - A collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more.
 - A suite of developer tools to help you develop, build, test, and update your code.
 
+## Table of Contents
+
+  - [Introduction](#introduction)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Create a new app](#create-a-new-app)
+  - [Run project](#run-project)
+
 ## Introduction
 
 Angular is a development platform and framework for building scalable web applications. It is built on TypeScript and provides a component-based framework for building user interfaces. Angular includes a collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more1. Angular is written in TypeScript and implements core and optional functionality as a set of TypeScript libraries that you import into your applications.
@@ -32,7 +40,7 @@ To create a new workspace and initial starter app:
 Run the CLI command ng new and provide the project name project-name, as shown here:
 ng new project-name
 
-## Run projet
+## Run project
 
 The Angular CLI includes a server, for you to build and serve your app locally.
 
