@@ -7,7 +7,8 @@
           "name": "essential",
           "topics": [
             "ECS Introduction.md",
-            "Lambda Introduction.md"
+            "Lambda Introduction.md",
+            "Lambda Local Frameworks.md"
           ]
         },
         {
