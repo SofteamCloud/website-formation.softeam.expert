@@ -29,6 +29,12 @@ const tutorialData = [
         photoName: "images/docker.png",
         path: "/docker"
     },
+    {
+        name: "BlockChain",
+        overview: "Blockchain is a decentralized digital ledger technology that securely records transactions across a network of computers, ensuring transparency and immutability.",
+        photoName: "images/blockchain.png",
+        path: "/blockchain"
+    },
 ];
 
 export default tutorialData;

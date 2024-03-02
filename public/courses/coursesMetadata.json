@@ -29,6 +29,19 @@
       ]
     },
     {
+      "name": "blockchain",
+      "levels": [
+        {
+          "name": "fundamental",
+          "topics": [
+            "BlockChain Introduction.md",
+            "Smart Contracts.md",
+            "Solidity Language.md"
+          ]
+        }
+      ]
+    },
+    {
       "name": "docker",
       "levels": [
         {
