@@ -22,6 +22,9 @@ tutorialData:
   - name: GitLab CI
     overview: GitLab is a widely used platform that enables teams to collaborate on software development projects. It provides a seamless interface for managing repositories, pipelines, and everything related to your project.
     photoName: tutorials/gitlab.jpg
+  - name: Angular
+    overview: GitLab is a widely used platform that enables teams to collaborate on software development projects. It provides a seamless interface for managing repositories, pipelines, and everything related to your project.
+    photoName: tutorials/angular2.png
 
 Courses:
   components:
