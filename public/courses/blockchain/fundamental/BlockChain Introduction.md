@@ -13,7 +13,7 @@ Blockchain technology is revolutionizing various industries, promising transpare
   - [Finance and Banking](#finance-and-banking)
   - [Healthcare](#healthcare)
   - [Identity Management](#identity-management)
-  - [Smart Contracts](#smart-contracts)
+- [Smart Contracts](#smart-contracts)
 - [Solidity](#solidity)  
 
 ## Introduction to Blockchain
@@ -46,7 +46,7 @@ Blockchain technology, coupled with Web3 principles, continues to drive innovati
 
 ### Solidity
 
-![Solidity](images/solidity_intro.jpg "Solidity")
+![Solidity](images/solidity_.png "Solidity")
 
 Solidity is a high-level programming language used for writing smart contracts on blockchain platforms like Ethereum. It enables developers to define the rules and behaviors of smart contracts, including data storage, functions, and logic. Solidity syntax is similar to JavaScript, making it accessible for developers familiar with C-like languages.
 
