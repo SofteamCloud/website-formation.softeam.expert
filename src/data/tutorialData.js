@@ -35,6 +35,12 @@ const tutorialData = [
         photoName: "images/blockchain.png",
         path: "/blockchain"
     },
+    {
+        name: "Angular",
+        overview: "Angular is a TypeScript-based open-source framework developed by Google for building web applications. It uses a component-based architecture and provides a range of features and tools for developers, making it scalable for both small and large projects. It’s a rewrite from the team that built AngularJS.",
+        photoName: "images/angular.png",
+        path: "/angular"
+    },
 ];
 
 export default tutorialData;

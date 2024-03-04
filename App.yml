@@ -25,7 +25,9 @@ tutorialData:
   - name: BlockChain
     overview: Blockchain is a decentralized digital ledger technology that securely records transactions across a network of computers, ensuring transparency and immutability.
     photoName: tutorials/blockchain.jpg    
-    
+  - name: Angular
+    overview: GitLab is a widely used platform that enables teams to collaborate on software development projects. It provides a seamless interface for managing repositories, pipelines, and everything related to your project.
+    photoName: tutorials/angular2.png
 
 Courses:
   components:
