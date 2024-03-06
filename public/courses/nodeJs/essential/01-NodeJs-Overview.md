@@ -2,10 +2,7 @@
 
 Node.js is a powerful, open-source, server-side JavaScript runtime environment built on Chrome's V8 JavaScript engine. It allows developers to execute JavaScript code on the server, enabling the development of scalable and high-performance network applications. Here's a brief overview of Node.js:
 
-## Table of Contents
-
-- [Node.js Overview](#nodejs-overview)
-  - [Table of Contents](#table-of-contents)
+## Table of contents
   - [Introduction](#introduction)
   - [Key Features](#key-features)
   - [Installation](#installation)
