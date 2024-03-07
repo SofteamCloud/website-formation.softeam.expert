@@ -38,7 +38,7 @@ const tutorialData = [
     {
         name: "Node.Js",
         overview: "Node.js is a server-side JavaScript runtime that allows for the execution of JavaScript code on the server, enabling the development of scalable and high-performance network applications.",
-        photoName: "images/nodeJS.png",
+        photoName: "images/nodeJs.png",
         path: "/nodeJs"
     },
 ];
