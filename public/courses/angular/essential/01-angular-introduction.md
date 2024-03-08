@@ -30,7 +30,8 @@ knoledge of Typescript and rxjs are helpful, but not required.
 
 ## Installation
 
-To install Angular you have to install an LTS version of Nodejs to enable npm command then install it with the following command: "npm install -g @angular/cli"
+To install Angular you have to install an LTS version of Nodejs to enable npm command then install it with the following command: 
+`npm install -g @angular/cli`
 You could see installation with details in "https://angular.io/guide/setup-local"
 
 
@@ -47,9 +48,10 @@ The Angular CLI includes a server, for you to build and serve your app locally.
 Navigate to the workspace folder, such as project-name.
 
 Run the following command:
-
+```javascript
 cd project-name
 ng serve --open
+```
 
 --open is optional allows to open the browser to  http://localhost:4200/.
 
