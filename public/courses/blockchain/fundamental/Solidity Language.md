@@ -1,4 +1,13 @@
-# Introduction to Solidity: The Language of Smart Contracts
+## Table of Contents
+- [Introduction to Solidity](#introduction-to-solidity)
+- [Understanding Solidity](#understanding-solidity)
+- [Features of Solidity](#features-of-solidity)
+- [Solidity Development Environment](#solidity-development-environment)
+- [Getting Started with Solidity](#getting-started-with-solidity)
+- [Conclusion](#conclution)
+- [References](#references)
+
+# Introduction to Solidity
 
 ![Solidity Logo](images/solidity_.png "Solidity Logo")
 
@@ -34,3 +43,7 @@ To start developing with Solidity, beginners can explore online tutorials, offic
 
 
 Solidity empowers developers to create decentralized applications (DApps) and smart contracts that automate processes, enable decentralized finance (DeFi), and revolutionize various industries. As blockchain technology continues to evolve, proficiency in Solidity will be invaluable for building the decentralized future.
+
+## References
+
+- [Solidity Language Overview](https://docs.soliditylang.org/en/v0.8.24/)

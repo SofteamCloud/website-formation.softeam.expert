@@ -15,6 +15,7 @@ Blockchain technology is revolutionizing various industries, promising transpare
   - [Identity Management](#identity-management)
 - [Smart Contracts](#smart-contracts)
 - [Solidity](#solidity)  
+- [References](#references)
 
 ## Introduction to Blockchain
 Blockchain technology gained prominence with the advent of Bitcoin, the first decentralized cryptocurrency. However, its applications extend far beyond digital currencies. Blockchain enables peer-to-peer transactions, eliminates the need for intermediaries, and ensures data integrity through consensus mechanisms like Proof of Work (PoW) or Proof of Stake (PoS).
@@ -51,3 +52,7 @@ Blockchain technology, coupled with Web3 principles, continues to drive innovati
 Solidity is a high-level programming language used for writing smart contracts on blockchain platforms like Ethereum. It enables developers to define the rules and behaviors of smart contracts, including data storage, functions, and logic. Solidity syntax is similar to JavaScript, making it accessible for developers familiar with C-like languages.
 
 Blockchain technology, coupled with Web3 principles, continues to drive innovation, reshaping industries, and empowering individuals in the digital age.
+
+## References
+
+- [Blockchain Overview](https://docs.aws.amazon.com/fr_fr/whitepapers/latest/aws-overview/blockchain.html)
