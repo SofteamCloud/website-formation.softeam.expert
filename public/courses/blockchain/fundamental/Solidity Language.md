@@ -15,13 +15,9 @@ Solidity is a high-level programming language used for writing smart contracts o
 
 ## Understanding Solidity
 
-![Understanding Solidity](images/understand-solidity_.png "Understanding Solidity")
-
 Solidity syntax is similar to JavaScript and is designed to be easy to learn for developers familiar with C-like languages. It enables developers to define the rules and behaviors of smart contracts, including data storage, functions, and logic.
 
 ## Features of Solidity
-
-![Features of Solidity](images/features_of_solidity.png "Features of Solidity")
 
 Solidity offers features such as:
 

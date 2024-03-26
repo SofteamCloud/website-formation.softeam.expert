@@ -1,7 +1,5 @@
 # Blockchain: Transforming the Future
 
-![Blockchain](images/blockchain_.png "Blockchain")
-
 ## Overview
 Blockchain technology is revolutionizing various industries, promising transparency, security, and decentralization. At its core, a blockchain is a distributed ledger that records transactions across a network of computers. These transactions are bundled into blocks, cryptographically linked, and stored in a chronological chain. This immutable and transparent nature of blockchain ensures trust among participants without the need for intermediaries.
 

@@ -9,8 +9,6 @@
 
 # Introduction to Smart Contracts
 
-![Smart Contracts](images/smart_contracts.jpg "Smart Contracts")
-
 Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They run on blockchain platforms like Ethereum, enabling automated transactions without intermediaries.
 
 ## Understanding Smart Contracts
